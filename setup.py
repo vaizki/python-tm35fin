@@ -9,7 +9,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="tm35fin",
-    version="0.1.0",
+    version="0.1.1",
     author="Jukka Vaisanen",
     author_email="vaizki@vaizki.fi",
     description="ETRS-TM35FIN coordinate system",

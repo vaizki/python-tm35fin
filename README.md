@@ -4,6 +4,14 @@ This library provides utility classes to work with ETRS-TM35FIN coordinates and 
 
 Finnish map tiles show [here]( https://www.maanmittauslaitos.fi/sites/maanmittauslaitos.fi/files/old/TM35-lehtijako.pdf).
 
+## Installation
+
+It's in pypi:
+
+```
+pip install tm35fin
+```
+
 ## Maturity level
 
 Low. API may change. I will package this up properly with time.
