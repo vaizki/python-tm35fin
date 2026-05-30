@@ -1,7 +1,0 @@
-#
-# These are just dev/test requirements, library itself has no external deps
-#
-
-pytest
-
-# EOF

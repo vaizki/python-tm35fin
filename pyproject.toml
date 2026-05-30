@@ -1,3 +1,53 @@
 [build-system]
-requires = ["setuptools>=42"]
+requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
+
+[project]
+name = "tm35fin"
+version = "2.0.0"
+description = "TM35FIN map tile helpers for Finland"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+authors = [
+    { name = "Jukka Vaisanen", email = "vaizki@vaizki.fi" },
+]
+keywords = [
+    "finland",
+    "gis",
+    "tm35fin",
+    "etrs-tm35fin",
+    "epsg:3067",
+    "map tiles",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: GIS",
+]
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest"]
+dev = ["pytest", "build", "twine"]
+reference = ["pytest", "pyproj>=3.6"]
+
+[tool.setuptools.package-data]
+tm35fin = ["py.typed"]
+
+[project.urls]
+Homepage = "https://github.com/vaizki/python-tm35fin"
+Repository = "https://github.com/vaizki/python-tm35fin"
+Issues = "https://github.com/vaizki/python-tm35fin/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["tm35fin*"]
